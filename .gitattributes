@@ -1,0 +1,10 @@
+* text=auto
+
+*.css linguist-vendored
+*.js linguist-vendored
+
+/tests export-ignore
+.env.local export-ignore
+.editorconfig export-ignore
+README.md export-ignore
+phpunit.xml.dist export-ignore
