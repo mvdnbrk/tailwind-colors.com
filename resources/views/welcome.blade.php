@@ -47,5 +47,9 @@
                 <span class="text-gray-800">white</span>
             </li>
         </ul>
+
+        <!-- Fathom - beautiful, simple website analytics -->
+        <script src="https://warbler.tailwind-colors.com/script.js" site="CQTVRGIZ" defer></script>
+        <!-- / Fathom -->
     </body>
 </html>
