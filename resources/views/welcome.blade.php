@@ -6,7 +6,7 @@
         <title>Tailwind colors</title>
         <link rel="stylesheet" href="{{ mix('css/main.css') }}">
     </head>
-    <body class="antialiased bg-gray-100 text-gray-800">
+    <body class="font-sans antialiased text-gray-800 bg-gray-100">
         <h1 class="p-6 text-3xl">Tailwind colors</h1>
 
         <ul class="text-sm font-medium text-white">
