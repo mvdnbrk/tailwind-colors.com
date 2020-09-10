@@ -37,6 +37,7 @@ jobs:
       - name: Prepare Laravel application
         run: |
           cp .env.tests .env
+          php artisan --version
           php artisan key:generate
           php artisan package:discover
 
