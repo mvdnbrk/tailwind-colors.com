@@ -5,6 +5,7 @@
 
 /.github export-ignore
 /tests export-ignore
+.php_cs.dist export-ignore
 .env.github export-ignore
 .env.local export-ignore
 .editorconfig export-ignore
