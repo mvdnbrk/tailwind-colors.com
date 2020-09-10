@@ -1,12 +1,21 @@
 {
     "name": "mvdnbrk/tailwind-colors.com",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Source code for the tailwind-colors.com website.",
     "keywords": [
+        "tailwindcss",
         "tailwind",
         "colors"
     ],
+    "homepage": "https://tailwind-colors.com",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark van den Broek",
+            "email": "mvdnbrk@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^7.4",
         "facade/ignition": "^2.3.6",
