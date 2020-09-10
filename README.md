@@ -1,4 +1,4 @@
-# tailwind-colors.com website
+# Tailwind-colors.com website
 
 [![Tests][ico-tests]][link-tests]
 [![Code style][ico-code-style]][link-code-style]
@@ -8,6 +8,7 @@ This is the source code of the [tailwind-colors.com][link-website] website.
 ## Contributing
 
 Thank you for considering contributing to the [tailwind-colors.com][link-website]!
+
 Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 ## Security vulnerabilities
