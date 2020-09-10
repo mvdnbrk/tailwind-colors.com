@@ -1,0 +1,43 @@
+name: tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        php: [7.4]
+        laravel: [^8.0]
+
+    name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - ${{ matrix.os }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.composer/cache/files
+          key: dependencies-php-${{ matrix.php }}-aravel-${{ matrix.laravel }}-composer-${{ hashFiles('composer.lock') }}
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, dom, fileinfo
+          coverage: none
+
+      - name: Install dependencies
+        run: |
+          composer install --no-ansi --no-interaction --no-scripts --no-suggest --prefer-dist --classmap-authoritative --optimize-autoloader
+
+      - name: Prepare Laravel application
+        run: |
+          cp .env.production .env
+          php artisan key:generate
+
+      - name: Execute tests
+        run: vendor/bin/phpunit
