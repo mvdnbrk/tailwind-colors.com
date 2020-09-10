@@ -10,6 +10,8 @@ class ViewHomepageTest extends TestCase
     /** @test */
     public function view_homepage()
     {
+        $this->withoutMix();
+
         $response = $this->get('/')
             ->assertStatus(200)
             ->assertSee('Tailwind colors');
