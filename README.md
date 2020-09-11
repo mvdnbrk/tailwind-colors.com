@@ -7,14 +7,17 @@ This is the source code of the [tailwind-colors.com][link-website] website.
 
 ## Contributing
 
-Thank you for considering contributing to the [tailwind-colors.com][link-website]!
-
+Thank you for considering contributing to the [tailwind-colors.com][link-website]!  
 Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 ## Security vulnerabilities
 
 Please review our [security policy](.github/SECURITY.md) on how to report security vulnerabilities.
 
+## Credits
+
+- [Mark van den Broek](https://github.com/mvdnbrk)
+- [All Contributors](../../contributors)
 
 [link-website]: https://tailwind-colors.com
 [ico-tests]: https://github.com/mvdnbrk/tailwind-colors.com/workflows/tests/badge.svg?branch=master
