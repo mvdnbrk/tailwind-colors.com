@@ -3,8 +3,8 @@
 namespace Domain\Palette;
 
 use Exception;
-use RuntimeException;
 use Illuminate\Filesystem\Filesystem;
+use RuntimeException;
 
 class FileLoader
 {
