@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit;
+namespace Tests\Unit\Palette;
 
 use Domain\Palette\FileLoader;
 use Exception;
