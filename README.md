@@ -20,7 +20,7 @@ Please review our [security policy](.github/SECURITY.md) on how to report securi
 - [All Contributors](../../contributors)
 
 [link-website]: https://tailwind-colors.com
-[ico-tests]: https://github.com/mvdnbrk/tailwind-colors.com/workflows/tests/badge.svg?branch=master
+[ico-tests]: https://github.com/mvdnbrk/tailwind-colors.com/workflows/tests/badge.svg?branch=main
 [link-tests]: https://github.com/mvdnbrk/tailwind-colors.com/actions?query=workflow%3Atests
-[ico-code-style]: https://github.com/mvdnbrk/tailwind-colors.com/workflows/code%20style/badge.svg?branch=master
+[ico-code-style]: https://github.com/mvdnbrk/tailwind-colors.com/workflows/code%20style/badge.svg?branch=main
 [link-code-style]: https://github.com/mvdnbrk/tailwind-colors.com/actions?query=workflow%3A%22code+style%22
