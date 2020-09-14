@@ -34,6 +34,7 @@ class FileLoaderTest extends TestCase
     {
         $this->expectException(RuntimeException::class);
         $this->expectExceptionMessage('Color palette file [invalid.json] contains an invalid JSON structure.');
+
         $palette = new FileLoader(new Filesystem, __DIR__.'/fixtures', 'invalid');
 
         $palette->load();
