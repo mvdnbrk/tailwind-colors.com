@@ -10,6 +10,6 @@
         "laravel-mix-purgecss": "^5.0.0",
         "mix-tailwindcss": "^1.2.0",
         "postcss-import": "^12.0.1",
-        "tailwindcss": "^1.8.6"
+        "tailwindcss": "^1.8.10"
     }
 }
