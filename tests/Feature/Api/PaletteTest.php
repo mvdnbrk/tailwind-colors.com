@@ -2,8 +2,8 @@
 
 namespace Tests\Feature\Api;
 
-use Tests\TestCase;
 use Illuminate\Http\Response;
+use Tests\TestCase;
 
 class PaletteTest extends TestCase
 {
