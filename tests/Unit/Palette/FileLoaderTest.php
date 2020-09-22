@@ -19,10 +19,24 @@ class FileLoaderTest extends TestCase
     }
 
     /** @test */
+    public function it_can_load_the_file_with_or_without_a_file_extension()
+    {
+        $filename = 'palette-v0x';
+        $this->assertIsArray(
+            (new FileLoader(new Filesystem, $filename))->load()
+        );
+
+        $filename = 'palette-v0x.json';
+        $this->assertIsArray(
+            (new FileLoader(new Filesystem, $filename))->load()
+        );
+    }
+
+    /** @test */
     public function it_throws_an_exception_if_the_path_does_not_exist()
     {
         $this->expectException(Exception::class);
-        $this->expectExceptionMessage('The file [not-existent/default-palette.json] does not exist.');
+        $this->expectExceptionMessage('The file [not-existent.json] does not exist.');
 
         (new FileLoader(new Filesystem, 'not-existent'))->load();
     }
@@ -33,6 +47,6 @@ class FileLoaderTest extends TestCase
         $this->expectException(RuntimeException::class);
         $this->expectExceptionMessage('Color palette file [invalid.json] contains an invalid JSON structure.');
 
-        (new FileLoader(new Filesystem, __DIR__.'/fixtures', 'invalid'))->load();
+        (new FileLoader(new Filesystem, 'invalid', __DIR__.'/fixtures'))->load();
     }
 }
