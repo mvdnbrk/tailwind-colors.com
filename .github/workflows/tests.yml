@@ -17,22 +17,41 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Cache dependencies
+      - name: Get composer cache directory
+        id: composercache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache composer dependencies
         uses: actions/cache@v2
         with:
-          path: ~/.composer/cache/files
+          path: ${{ steps.composercache.outputs.dir }}
           key: dependencies-php-${{ matrix.php }}-laravel-${{ matrix.laravel }}-composer-${{ hashFiles('composer.lock') }}
+
+      - name: Get node.js cache directory
+        id: nodecache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache node.js dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.nodecache.outputs.dir }}
+          key: dependencies-node-${{ hashFiles('yarn.lock') }}
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
-          extensions: mbstring, dom, fileinfo
           coverage: none
 
-      - name: Install dependencies
+      - name: Install composer dependencies
         run: |
           composer install --no-ansi --no-interaction --no-scripts --no-suggest --prefer-dist --classmap-authoritative --optimize-autoloader
+
+      - name: Install node.js dependencies
+        run: yarn install
+
+      - name: Compile assets
+        run: yarn run production
 
       - name: Prepare Laravel application
         run: |
