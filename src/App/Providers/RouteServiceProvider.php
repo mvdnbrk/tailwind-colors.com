@@ -2,9 +2,8 @@
 
 namespace App\Providers;
 
-use Domain\Palette\DefaultPalette;
+use App\Http\Controllers\Api\PaletteController;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
@@ -19,9 +18,7 @@ class RouteServiceProvider extends ServiceProvider
                 'cache.headers:public;max_age=86400;etag',
             ])
                 ->prefix('api')
-                ->get('palette.json', function (DefaultPalette $palette) {
-                    return new JsonResponse($palette->getData());
-                });
+                ->get('palette.json', PaletteController::class);
         });
     }
 }
