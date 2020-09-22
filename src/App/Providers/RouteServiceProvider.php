@@ -16,7 +16,7 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware([
                 'stateless',
-                'cache.headers:public;max_age=3600;etag',
+                'cache.headers:public;max_age=86400;etag',
             ])
                 ->prefix('api')
                 ->get('palette.json', function (DefaultPalette $palette) {
