@@ -3,9 +3,9 @@
 namespace Domain\Palette;
 
 use Exception;
-use RuntimeException;
-use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
+use Illuminate\Support\Str;
+use RuntimeException;
 
 class FileLoader
 {
