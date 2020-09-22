@@ -27,12 +27,17 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
-          extensions: mbstring, dom, fileinfo
           coverage: none
 
       - name: Install dependencies
         run: |
           composer install --no-ansi --no-interaction --no-scripts --no-suggest --prefer-dist --classmap-authoritative --optimize-autoloader
+
+      - name: Install NPM dependencies
+        run: yarn install
+
+      - name: Compile assets
+        run: yarn run production
 
       - name: Prepare Laravel application
         run: |
