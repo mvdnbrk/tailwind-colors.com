@@ -14,9 +14,14 @@ class RouteServiceProvider extends ServiceProvider
         $this->routes(function () {
             Route::middleware('web')->group(base_path('routes/web.php'));
 
-            Route::middleware('cache.headers:public;max_age=3600;etag')->prefix('api')->get('palette.json', function (DefaultPalette $palette) {
-                return new JsonResponse($palette->getData());
-            });
+            Route::middleware([
+                'stateless',
+                'cache.headers:public;max_age=3600;etag',
+            ])
+                ->prefix('api')
+                ->get('palette.json', function (DefaultPalette $palette) {
+                    return new JsonResponse($palette->getData());
+                });
         });
     }
 }
