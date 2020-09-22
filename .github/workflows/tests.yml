@@ -43,11 +43,11 @@ jobs:
           php-version: ${{ matrix.php }}
           coverage: none
 
-      - name: Install dependencies
+      - name: Install composer dependencies
         run: |
           composer install --no-ansi --no-interaction --no-scripts --no-suggest --prefer-dist --classmap-authoritative --optimize-autoloader
 
-      - name: Install NPM dependencies
+      - name: Install node.js dependencies
         run: yarn install
 
       - name: Compile assets
