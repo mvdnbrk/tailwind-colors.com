@@ -10,7 +10,7 @@ This is the source code of the [tailwind-colors.com][link-website] website.
 Thank you for considering contributing to the [tailwind-colors.com][link-website]!  
 Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
-## Security vulnerabilities
+## Security Vulnerabilities
 
 Please review our [security policy](.github/SECURITY.md) on how to report security vulnerabilities.
 
