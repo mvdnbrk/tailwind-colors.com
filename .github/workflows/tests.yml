@@ -17,10 +17,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Cache dependencies
+      - name: Get composer cache directory
+        id: composercache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache composer dependencies
         uses: actions/cache@v2
         with:
-          path: ~/.composer/cache/files
+          path: ${{ steps.composercache.outputs.dir }}
           key: dependencies-php-${{ matrix.php }}-laravel-${{ matrix.laravel }}-composer-${{ hashFiles('composer.lock') }}
 
       - name: Setup PHP
