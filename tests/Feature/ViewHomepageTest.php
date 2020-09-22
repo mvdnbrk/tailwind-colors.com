@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Http\Response;
 use Tests\TestCase;
 
 class ViewHomepageTest extends TestCase
@@ -10,10 +10,8 @@ class ViewHomepageTest extends TestCase
     /** @test */
     public function view_homepage()
     {
-        $this->withoutMix();
-
-        $response = $this->get('/')
-            ->assertStatus(200)
-            ->assertSee('Tailwind colors');
+        $this->get('/')
+             ->assertStatus(Response::HTTP_OK)
+             ->assertSee('Tailwind colors');
     }
 }
