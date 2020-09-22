@@ -2,10 +2,10 @@
 
 namespace App\Providers;
 
-use Illuminate\Http\JsonResponse;
 use Domain\Palette\DefaultPalette;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
