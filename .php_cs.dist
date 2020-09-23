@@ -124,7 +124,7 @@ $rules = [
     'whitespace_after_comma_in_array' => true,
 ];
 
-$project_path = getcwd();
+$project_path = __DIR__;
 $finder = Finder::create()
     ->in([
         $project_path.'/src/App',
