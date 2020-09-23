@@ -41,7 +41,7 @@ final class FileLoader
         return $decoded;
     }
 
-    private function setFilename(string $filename): void
+    private function setFilename(string $filename = ''): void
     {
         if ($filename === '') {
             $this->filename = Str::of(config('palette.versions.default'))->replace('.', '')->prepend('palette-v')->__toString();
