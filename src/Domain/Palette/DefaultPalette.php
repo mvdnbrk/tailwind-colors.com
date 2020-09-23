@@ -2,7 +2,9 @@
 
 namespace Domain\Palette;
 
-class DefaultPalette
+use Illuminate\Contracts\Support\Arrayable;
+
+class DefaultPalette implements Arrayable
 {
     private array $data;
 
@@ -11,7 +13,7 @@ class DefaultPalette
         $this->data = $loader->load();
     }
 
-    public function getData(): array
+    public function toArray(): array
     {
         return $this->data;
     }
