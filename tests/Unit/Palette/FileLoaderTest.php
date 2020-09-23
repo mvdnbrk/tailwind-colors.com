@@ -14,7 +14,7 @@ class FileLoaderTest extends TestCase
     public function it_can_load_the_file()
     {
         $this->assertIsArray(
-            (new FileLoader(new Filesystem))->load()
+            (new FileLoader(new Filesystem, 'palette-v1x'))->load()
         );
     }
 
