@@ -23,7 +23,7 @@ final class Color extends Component
 
     public function bgClass(): string
     {
-        return collect($this->colorMap())->get($this->color, '');
+        return collect($this->bgColorMap())->get($this->color, '');
     }
 
     public function textClass(): string
@@ -31,7 +31,7 @@ final class Color extends Component
         return collect($this->textColorMap())->get($this->color, '');
     }
 
-    private function colorMap(): array
+    private function bgColorMap(): array
     {
         return [
             'black' => 'bg-black',
