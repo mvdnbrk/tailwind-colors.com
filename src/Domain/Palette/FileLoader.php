@@ -17,7 +17,7 @@ class FileLoader
 
     public function __construct(
         Filesystem $filesystem,
-        string $filename = 'palette-v1x',
+        string $filename = '',
         string $path = __DIR__.'/../../../resources/json'
     ) {
         $this->filesystem = $filesystem;
@@ -41,6 +41,10 @@ class FileLoader
 
     private function setFilename(string $filename): void
     {
+        if ($filename === '') {
+            $filename = 'palette-v'.str_replace('.', '', config('palette.versions.default'));
+        }
+
         $this->filename = Str::of($filename)->basename('.json');
     }
 
