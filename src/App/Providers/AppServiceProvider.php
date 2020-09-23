@@ -2,11 +2,11 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Str;
-use Domain\Palette\FileLoader;
 use Domain\Palette\DefaultPalette;
+use Domain\Palette\FileLoader;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 
 class AppServiceProvider extends ServiceProvider
 {
