@@ -9,6 +9,6 @@ class PaletteController
 {
     public function __invoke(DefaultPalette $palette): JsonResponse
     {
-        return new JsonResponse($palette->getData());
+        return new JsonResponse($palette->toArray());
     }
 }

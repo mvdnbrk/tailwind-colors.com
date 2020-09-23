@@ -10,10 +10,10 @@ use PHPUnit\Framework\TestCase;
 class DefaultPaletteTest extends TestCase
 {
     /** @test */
-    public function it_can_get_the_data()
+    public function it_can_get_the_palette_as_an_array()
     {
-        $palette = new DefaultPalette(new FileLoader(new Filesystem));
-
-        $this->assertIsArray($palette->getData());
+        $this->assertIsArray(
+            (new DefaultPalette(new FileLoader(new Filesystem)))->toArray()
+        );
     }
 }
