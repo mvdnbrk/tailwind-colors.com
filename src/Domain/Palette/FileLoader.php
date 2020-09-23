@@ -43,12 +43,6 @@ final class FileLoader
 
     private function setFilename(string $filename = ''): void
     {
-        if ($filename === '') {
-            $this->filename = Str::of(config('palette.versions.default'))->replace('.', '')->prepend('palette-v')->__toString();
-
-            return;
-        }
-
         $this->filename = Str::of($filename)->basename('.json')->__toString();
     }
 
