@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Domain\Palette;
 
 use Exception;
@@ -42,12 +44,12 @@ final class FileLoader
     private function setFilename(string $filename): void
     {
         if ($filename === '') {
-            $this->filename = Str::of(config('palette.versions.default'))->replace('.', '')->prepend('palette-v');
+            $this->filename = Str::of(config('palette.versions.default'))->replace('.', '')->prepend('palette-v')->__toString();
 
             return;
         }
 
-        $this->filename = Str::of($filename)->basename('.json');
+        $this->filename = Str::of($filename)->basename('.json')->__toString();
     }
 
     private function setPath(string $path): void
