@@ -12,7 +12,7 @@
             <h1>Tailwind colors</h1>
         </div>
 
-        <ul class="text-sm font-medium text-white">
+        <ul class="text-sm font-medium">
             @foreach($palette->colors() as $color)
                 <x-color :color="$color"/>
             @endforeach
