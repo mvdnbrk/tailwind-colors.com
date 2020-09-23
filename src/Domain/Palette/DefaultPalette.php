@@ -4,7 +4,7 @@ namespace Domain\Palette;
 
 use Illuminate\Contracts\Support\Arrayable;
 
-class DefaultPalette implements Arrayable
+final class DefaultPalette implements Arrayable
 {
     private array $data;
 

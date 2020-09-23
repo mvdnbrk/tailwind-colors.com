@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Domain\Palette\DefaultPalette;
 use Illuminate\View\View;
 
-class HomepageController
+final class HomepageController
 {
     public function __invoke(DefaultPalette $palette): View
     {

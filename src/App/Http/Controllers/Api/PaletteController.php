@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use Domain\Palette\DefaultPalette;
 use Illuminate\Http\JsonResponse;
 
-class PaletteController
+final class PaletteController
 {
     public function __invoke(DefaultPalette $palette): JsonResponse
     {
