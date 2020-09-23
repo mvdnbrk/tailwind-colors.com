@@ -15,6 +15,11 @@ final class DefaultPalette implements Arrayable
         $this->data = $loader->load();
     }
 
+    public function colors(): array
+    {
+        return array_keys($this->data);
+    }
+
     public function toArray(): array
     {
         return $this->data;
