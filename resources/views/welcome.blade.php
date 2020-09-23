@@ -11,43 +11,11 @@
             <x-tailwind-mark/>
             <h1>Tailwind colors</h1>
         </div>
+
         <ul class="text-sm font-medium text-white">
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-red-500">
-                <span class="text-red-900">red</span>
-            </li>
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-orange-500">
-                <span class="text-orange-900 ">orange</span>
-            </li>
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-yellow-500">
-                <span class="text-yellow-900">yellow</span>
-            </li>
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-green-500">
-                <span class="text-green-900">green</span>
-            </li>
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-teal-500">
-                <span class="text-teal-900">teal</span>
-            </li>
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-blue-500">
-                <span class="text-blue-900">blue</span>
-            </li>
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-indigo-500">
-                <span class="text-indigo-900">indigo</span>
-            </li>
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-purple-500">
-                <span class="text-purple-900">purple</span>
-            </li>
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-pink-500">
-                <span class="text-pink-900">pink</span>
-            </li>
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-gray-500">
-                <span class="text-gray-900">gray</span>
-            </li>
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-black">
-                <span class="text-white">black</span>
-            </li>
-            <li class="flex items-end w-full h-16 px-6 py-2 mb-2 bg-white">
-                <span class="text-gray-800">white</span>
-            </li>
+            @foreach($palette->colors() as $color)
+                <x-color :color="$color"/>
+            @endforeach
         </ul>
 
         <!-- Fathom - beautiful, simple website analytics -->
