@@ -20,7 +20,7 @@ final class FileLoader
     public function __construct(
         Filesystem $filesystem,
         string $filename = '',
-        string $path = __DIR__.'/../../../resources/json'
+        string $path = ''
     ) {
         $this->filesystem = $filesystem;
         $this->setFilename($filename);

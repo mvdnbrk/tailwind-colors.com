@@ -13,7 +13,7 @@ class DefaultPaletteTest extends TestCase
     public function it_can_get_the_palette_as_an_array()
     {
         $this->assertIsArray(
-            (new DefaultPalette(new FileLoader(new Filesystem, 'palette-v1x')))->toArray()
+            (new DefaultPalette(new FileLoader(new Filesystem, 'palette', __DIR__.'/fixtures')))->toArray()
         );
     }
 }

@@ -24,7 +24,7 @@ class JsonResourcesTest extends TestCase
     public function ensure_the_json_files_are_valid(string $filename)
     {
         $this->assertIsArray(
-            (new FileLoader(new Filesystem, $filename))->load()
+            (new FileLoader(new Filesystem, $filename, __DIR__.'/../../../resources/json'))->load()
         );
     }
 }

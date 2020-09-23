@@ -14,21 +14,21 @@ class FileLoaderTest extends TestCase
     public function it_can_load_the_file()
     {
         $this->assertIsArray(
-            (new FileLoader(new Filesystem, 'palette-v1x'))->load()
+            (new FileLoader(new Filesystem, 'palette', __DIR__.'/fixtures'))->load()
         );
     }
 
     /** @test */
     public function it_can_load_the_file_with_or_without_a_file_extension()
     {
-        $filename = 'palette-v0x';
+        $filename = 'palette';
         $this->assertIsArray(
-            (new FileLoader(new Filesystem, $filename))->load()
+            (new FileLoader(new Filesystem, $filename, __DIR__.'/fixtures'))->load()
         );
 
-        $filename = 'palette-v0x.json';
+        $filename = 'palette.json';
         $this->assertIsArray(
-            (new FileLoader(new Filesystem, $filename))->load()
+            (new FileLoader(new Filesystem, $filename, __DIR__.'/fixtures'))->load()
         );
     }
 
