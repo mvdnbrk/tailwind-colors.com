@@ -8,7 +8,7 @@ mix
     .tailwind()
     .purgeCss({
         extend: {
-            content: [path.join(__dirname, 'src/app/view/components/*.php')],
+            content: [path.join(__dirname, 'src/App/View/Components/*.php')],
         },
     })
     .version();
