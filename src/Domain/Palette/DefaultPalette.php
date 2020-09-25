@@ -25,14 +25,9 @@ final class DefaultPalette implements Arrayable
 
     public function shadesOf(string $color): array
     {
-        if (
-            array_key_exists($color, $this->data) &&
-            is_array($this->data[$color])
-        ) {
-            return $this->data[$color];
-        }
+        $value = Arr::get($this->data, $color);
 
-        return [];
+        return is_array($value) ? $value : [];
     }
 
     public function toArray(): array
