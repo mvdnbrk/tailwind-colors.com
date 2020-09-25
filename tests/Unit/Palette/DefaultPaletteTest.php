@@ -9,11 +9,21 @@ use PHPUnit\Framework\TestCase;
 
 class DefaultPaletteTest extends TestCase
 {
-    /** @test */
-    public function it_can_get_the_palette_as_an_array()
+    protected function setUp(): void
     {
-        $this->assertIsArray(
-            (new DefaultPalette(new FileLoader(new Filesystem, 'palette', __DIR__.'/fixtures')))->toArray()
-        );
+        $this->palette = new DefaultPalette(new FileLoader(new Filesystem, 'palette', __DIR__.'/fixtures'));
+    }
+
+    /** @test */
+    public function it_can_retrieve_the_palette_as_an_array()
+    {
+        $this->assertIsArray($this->palette->toArray());
+    }
+
+    /** @test */
+    public function it_can_retrieve_the_colors()
+    {
+        $this->assertIsArray($this->palette->colors());
+        $this->assertSame(['black', 'white', 'blue'], $this->palette->colors());
     }
 }
