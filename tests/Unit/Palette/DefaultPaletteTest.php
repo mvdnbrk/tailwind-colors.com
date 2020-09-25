@@ -26,7 +26,7 @@ class DefaultPaletteTest extends TestCase
     public function it_can_retrieve_the_colors()
     {
         $this->assertIsArray($this->palette->colors());
-        $this->assertSame(['black', 'white', 'blue'], $this->palette->colors());
+        $this->assertSame(['blue'], $this->palette->colors());
     }
 
     /** @test */

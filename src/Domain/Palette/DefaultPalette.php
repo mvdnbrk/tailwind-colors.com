@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Domain\Palette;
 
 use Illuminate\Contracts\Support\Arrayable;
+use Illuminate\Support\Arr;
 
 final class DefaultPalette implements Arrayable
 {
@@ -17,7 +18,9 @@ final class DefaultPalette implements Arrayable
 
     public function colors(): array
     {
-        return array_keys($this->data);
+        return array_keys(
+            Arr::except($this->data, ['black', 'white'])
+        );
     }
 
     public function shadesOf(string $color): array
