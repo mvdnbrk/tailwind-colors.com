@@ -25,6 +25,8 @@
                     @endforeach
                 </x-color>
             @endforeach
+            <x-color color="black"/>
+            <x-color color="white"/>
         </ul>
 
         <div class="flex-1 px-6 mt-16 text-sm text-gray-600 hover:text-gray-800">
