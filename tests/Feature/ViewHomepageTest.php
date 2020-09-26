@@ -12,6 +12,9 @@ class ViewHomepageTest extends TestCase
     {
         $this->get('/')
              ->assertStatus(Response::HTTP_OK)
-             ->assertSee('Tailwind colors');
+             ->assertSee('Tailwind colors')
+             ->assertSee('black')
+             ->assertSee('white')
+             ->assertSee('red');
     }
 }
