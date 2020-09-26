@@ -10,6 +10,6 @@ final class HomepageController
 {
     public function __invoke(): View
     {
-        return view('welcome');
+        return view('homepage');
     }
 }
