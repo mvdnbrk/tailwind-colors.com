@@ -12,22 +12,7 @@
             <h1>Tailwind colors</h1>
         </div>
 
-        <ul class="text-sm font-medium shadow">
-            @foreach($palette->colors() as $color)
-                <x-color :color="$color">
-                    @foreach($palette->shadesOf($color) as $key => $value)
-                        <span
-                            class="flex items-end w-24 p-2 text-{{ $color }}-900 shadow"
-                            style="background-color: {{ $value }};"
-                        >
-                            {{ $key }}
-                        </span>
-                    @endforeach
-                </x-color>
-            @endforeach
-            <x-color color="black"/>
-            <x-color color="white"/>
-        </ul>
+        <x-palette/>
 
         <div class="flex-1 px-6 mt-16 text-sm text-gray-600 hover:text-gray-800">
             <a href="https://github.com/mvdnbrk/tailwind-colors.com" title="source code on github">
