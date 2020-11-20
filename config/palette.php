@@ -9,7 +9,7 @@ return [
     */
 
     'versions' => [
-        'default' => '1.x',
+        'default' => '2.x',
         'published' => [
             '0.x',
             '1.x',
