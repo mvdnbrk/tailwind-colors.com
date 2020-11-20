@@ -36,7 +36,14 @@ final class Color extends Component
         return [
             'black' => 'bg-black',
             'white' => 'bg-white',
+            'amber' => 'bg-amber-500',
+            'blueGray' => 'bg-blueGray-500',
+            'coolGray' => 'bg-coolGray-500',
+            'cyan' => 'bg-cyan-500',
+            'fuchsia' => 'bg-fuchsia-500',
             'gray' => 'bg-gray-500',
+            'lightBlue' => 'bg-lightBlue-500',
+            'lime' => 'bg-lime-500',
             'red' => 'bg-red-500',
             'orange' => 'bg-orange-500',
             'yellow' => 'bg-yellow-500',
@@ -46,6 +53,10 @@ final class Color extends Component
             'indigo' => 'bg-indigo-500',
             'purple' => 'bg-purple-500',
             'pink' => 'bg-pink-500',
+            'rose' => 'bg-rose-500',
+            'trueGray' => 'bg-trueGray-500',
+            'violet' => 'bg-violet-500',
+            'warmGray' => 'bg-warmGray-500',
         ];
     }
 
