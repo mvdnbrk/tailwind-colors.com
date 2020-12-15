@@ -20,7 +20,7 @@
         "php": "^7.4",
         "facade/ignition": "^2.5",
         "fideloper/proxy": "^4.4",
-        "laravel/framework": "^8.18",
+        "laravel/framework": "^8.19",
         "laravel/tinker": "^2.5"
     },
     "require-dev": {
