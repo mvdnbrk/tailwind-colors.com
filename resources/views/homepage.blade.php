@@ -14,7 +14,7 @@
 
         <x-palette/>
 
-        <div class="flex-1 px-6 mt-16 text-sm text-gray-600 hover:text-gray-800">
+        <div class="flex-1 px-6 my-16 text-sm text-gray-600 hover:text-gray-800">
             <a href="https://github.com/mvdnbrk/tailwind-colors.com" title="source code on github">
                 source on github
             </a>
