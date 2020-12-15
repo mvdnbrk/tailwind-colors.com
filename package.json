@@ -1,15 +1,15 @@
 {
     "private": true,
     "scripts": {
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "development": "mix",
+        "production": "mix --production"
     },
     "dependencies": {
+        "autoprefixer": "^10.1",
         "cross-env": "^7.0",
-        "laravel-mix": "^5.0",
-        "laravel-mix-purgecss": "^5.0",
+        "laravel-mix": "^6.0.0-beta.17",
         "mix-tailwindcss": "^1.2",
-        "postcss-import": "^12.0",
-        "tailwindcss": "^1.9"
+        "postcss": "^8.2",
+        "tailwindcss": "^2.0"
     }
 }
