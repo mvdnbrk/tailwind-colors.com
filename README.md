@@ -7,7 +7,7 @@ This is the source code of the [tailwind-colors.com][link-website] website.
 
 ## Contributing
 
-Thank you for considering contributing to the [tailwind-colors.com][link-website]!  
+Thank you for considering contributing to [tailwind-colors.com][link-website]!  
 Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
