@@ -7,7 +7,7 @@
     "dependencies": {
         "autoprefixer": "^10.1",
         "cross-env": "^7.0",
-        "laravel-mix": "^6.0.0-beta.17",
+        "laravel-mix": "^6.0.3",
         "mix-tailwindcss": "^1.2",
         "postcss": "^8.2",
         "tailwindcss": "^2.0"
