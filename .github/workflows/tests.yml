@@ -8,10 +8,10 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        php: [7.4]
+        php: [8.0, 7.4]
         laravel: [^8.0]
 
-    name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - ${{ matrix.os }}
+    name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
 
     steps:
       - name: Checkout code
@@ -44,7 +44,7 @@ jobs:
           coverage: none
 
       - name: Install composer dependencies
-        run: composer install --no-ansi --no-interaction --no-scripts --no-suggest --prefer-dist --classmap-authoritative --optimize-autoloader
+        run: composer install --no-ansi --no-interaction --no-scripts --prefer-dist --classmap-authoritative --optimize-autoloader
 
       - name: Install node.js dependencies
         run: yarn install
