@@ -5,9 +5,9 @@
         "production": "mix --production"
     },
     "dependencies": {
-        "autoprefixer": "^10.1",
+        "autoprefixer": "^10.2",
         "cross-env": "^7.0",
-        "laravel-mix": "^6.0.3",
+        "laravel-mix": "^6.0.10",
         "mix-tailwindcss": "^1.2",
         "postcss": "^8.2",
         "tailwindcss": "^2.0"
