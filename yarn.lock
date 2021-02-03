@@ -2149,7 +2149,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-cross-env@^7.0, cross-env@^7.0.2:
+cross-env@^7.0.2:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
   integrity sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
@@ -3968,10 +3968,10 @@ klona@^2.0.4:
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
   integrity sha512-ZRbnvdg/NxqzC7L9Uyqzf4psi1OM4Cuc+sJAkQPjO6XkQIJTNbfK2Rsmbw8fx1p2mkZdp2FZYo2+LwXYY/uwIA==
 
-laravel-mix@^6.0.10:
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-6.0.10.tgz#c841145ef41783f0952633132eeba3f6da321c85"
-  integrity sha512-wVWpX5I/weqUZDQpVbr3k2pvb1Of2Di/4G5UDIfDiPNOBc4WFp1fvmJV88/H/LZJBncv3VZ+7chzbYMasNzYiw==
+laravel-mix@^6.0.11:
+  version "6.0.11"
+  resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-6.0.11.tgz#491cb040306357035114c63fed61594880183354"
+  integrity sha512-1M5HSQ80p1e1JW64miAZnPW/Er1k2dQDYk036v58xjgVFUn7dbpFh5j1T6sAYK1tTBpRO9344uPtdruw7yjqLA==
   dependencies:
     "@babel/core" "^7.12.3"
     "@babel/plugin-proposal-object-rest-spread" "^7.12.1"
@@ -4289,10 +4289,10 @@ minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
-mix-tailwindcss@^1.2:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/mix-tailwindcss/-/mix-tailwindcss-1.2.0.tgz#a4edeea96c5040d0c8606b12964abd8a0b238c77"
-  integrity sha512-dhG63wPBd4xy+HjPtTnJLXHfzKV6BEhqEKwrmMlKVurtR8+3oRexCff8rnVWonyGaSo8VRVtYhYR5VB53HEnqQ==
+mix-tailwindcss@^1.3:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/mix-tailwindcss/-/mix-tailwindcss-1.3.0.tgz#8b0315863aff99b7fa1de3c73c922d60848a4ad7"
+  integrity sha512-K76U+TS2wiKOKv8I6muMGbzg+3CrAQaI5cGduMzmjkSLS1GolL4kYSGJCP9LrtjAmFb9vINCzqPDNiNEjoeX3w==
 
 mixin-deep@^1.2.0:
   version "1.3.2"

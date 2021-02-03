@@ -20,14 +20,14 @@
         "php": "^7.4 || ^8.0",
         "facade/ignition": "^2.5",
         "fideloper/proxy": "^4.4",
-        "laravel/framework": "^8.23",
-        "laravel/tinker": "^2.5"
+        "laravel/framework": "^8.26",
+        "laravel/tinker": "^2.6"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.18",
         "fakerphp/faker": "^1.13",
         "mockery/mockery": "^1.3",
-        "nunomaduro/collision": "^5.2",
+        "nunomaduro/collision": "^5.3",
         "phpunit/phpunit": "^9.5"
     },
     "config": {
